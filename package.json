@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "author": "",
   "dependencies": {
-    "@boostercloud/framework-core": "^0.11.1",
-    "@boostercloud/framework-types": "^0.11.1",
+    "@boostercloud/framework-core": "0.11.3",
+    "@boostercloud/framework-types": "0.11.3",
     "@boostercloud/framework-provider-aws": "*",
-    "@boostercloud/rocket-batch-file-process-aws-infrastructure": "0.10.0",
+    "@boostercloud/rocket-batch-file-process-aws-infrastructure": "0.11.3",
     "tslib": "^2.0.3"
   },
   "devDependencies": {

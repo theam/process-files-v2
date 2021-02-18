@@ -11,7 +11,7 @@ export class FileS3Event {
     const AWS = require('aws-sdk')
     const s3 = new AWS.S3()
 
-    const file = await Booster.fetchEntitySnapshot(File, event.s3uri)
+    const file = await Booster.fetchEntitySnapshot(File, event.fileURI)
     if (file) {
       const s3uriArray = file.id.toString().split('/')
       const key = s3uriArray.pop()
