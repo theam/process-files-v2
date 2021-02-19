@@ -1,5 +1,5 @@
 import { Entity, Reduces } from '@boostercloud/framework-core'
-import { AddressAdded } from '../events/address-added'
+import { AddressAdded } from './address-added'
 import { UUID } from '@boostercloud/framework-types'
 
 @Entity

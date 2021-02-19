@@ -10,6 +10,9 @@ Booster.configure('production', (config: BoosterConfig): void => {
       parameters: {
         bucketName: 'process-big-file-rocket',
         chunkSize: '2',
+        entityId: 'id',
+        eventTypeName: 'AddressAdded',
+        entityTypeName: 'AddressEntity',
       },
     },
   ])
