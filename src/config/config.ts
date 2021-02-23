@@ -8,11 +8,15 @@ Booster.configure('production', (config: BoosterConfig): void => {
     {
       packageName: '@boostercloud/rocket-batch-file-process-aws-infrastructure',
       parameters: {
-        bucketName: 'process-big-file-rocket',
-        chunkSize: '2',
-        entityId: 'id',
-        eventTypeName: 'AddressAdded',
-        entityTypeName: 'AddressEntity',
+        config: {
+          bucketName: 'process-big-file-rocket',
+          chunkSize: '2',
+        },
+        rowEvent: {
+          entityId: 'id',
+          eventTypeName: 'AddressAdded',
+          entityTypeName: 'AddressEntity',
+        },
       },
     },
   ])
